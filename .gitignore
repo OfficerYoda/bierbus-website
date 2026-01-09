@@ -23,10 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# NPM
-package-lock.json
-package.json
-
 # Firebase
 .firebase/
 .firebaserc
