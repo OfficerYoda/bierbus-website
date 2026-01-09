@@ -26,3 +26,8 @@ dist-ssr
 # NPM
 package-lock.json
 package.json
+
+# Firebase
+.firebase/
+.firebaserc
+public/*
