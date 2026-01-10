@@ -11,7 +11,7 @@ const App: React.FC = () => {
       <nav className="fixed top-0 w-full z-50 bg-slate-950/90 backdrop-blur-md border-b border-white/5">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
           <span className="font-black text-2xl tracking-tighter text-white uppercase italic">
-            BIER<span className="text-yellow-500">BUS</span>
+            <span className="beer-gradient">BIER</span>BUS
           </span>
           <div className="hidden md:flex gap-10 text-xs font-black tracking-widest text-slate-400">
             <a
@@ -26,12 +26,12 @@ const App: React.FC = () => {
             >
               Die Tour
             </a>
-            <a
-              href="#"
-              className="hover:text-yellow-500 transition-colors uppercase opacity-30 cursor-not-allowed"
-            >
-              Shop
-            </a>
+            {/* <a */}
+            {/*   href="#" */}
+            {/*   className="hover:text-yellow-500 transition-colors uppercase opacity-30 cursor-not-allowed" */}
+            {/* > */}
+            {/*   Shop */}
+            {/* </a> */}
           </div>
           <div className="flex items-center gap-4">
             <span className="hidden sm:inline-block text-[10px] font-bold text-yellow-500/50 uppercase tracking-widest">

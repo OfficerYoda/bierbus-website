@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
 export interface Event {
   id: number;
   title: string;
   date: string;
+  time: string;
   location: string;
   description: string;
-  status: 'confirmed' | 'tentative';
 }
 
 export interface Feature {
@@ -15,3 +15,4 @@ export interface Feature {
   description: string;
   icon: React.ElementType;
 }
+

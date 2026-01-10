@@ -1,5 +1,5 @@
 import React from "react";
-import { Calendar, MapPin, Clock } from "lucide-react";
+import { MapPin, Clock } from "lucide-react";
 import { Event } from "../types";
 
 const events: Event[] = [
@@ -7,28 +7,28 @@ const events: Event[] = [
     id: 1,
     title: "Faschingsumzug Hockenheim",
     date: "Sa. 14.02.",
+    time: "13:31",
     location: "Innenstadt Hockenheim",
     description:
-      "Der Startschuss! Wir rollen den BierBus zum ersten Mal richtig aus. Eskalation vorprogrammiert.",
-    status: "confirmed"
+      "Der Startschuss! Wir rollen den BierBus zum ersten Mal richtig aus. Eskalation vorprogrammiert."
   },
   {
     id: 2,
     title: "Umzug Altlußheim",
     date: "Mo. 16.02.",
+    time: "13:31",
     location: "Altlußheim",
     description:
-      "Rosenmontag wird wild. Der BierBus zieht weiter zur nächsten Station.",
-    status: "confirmed"
+      "Rosenmontag wird wild. Der BierBus zieht weiter zur nächsten Station."
   },
   {
     id: 3,
     title: "Erster Mai",
-    date: "01.05.",
+    date: "Fr. 01.05.",
+    time: "TBA",
     location: "TBA",
     description:
-      "Traditionelle Wanderung. Route steht noch nicht fest, aber der Durst ist sicher.",
-    status: "tentative"
+      "Traditionelle Wanderung. Route steht noch nicht fest, aber der Durst ist ist schon da."
   }
 ];
 
@@ -44,14 +44,14 @@ export const Events: React.FC = () => {
                 Daten
               </span>
             </h2>
-            <p className="text-slate-400">
-              Hier findet ihr uns (und das Bier).
-            </p>
+            {/* <p className="text-slate-400"> */}
+            {/*   Hier findet ihr uns (und das Bier). */}
+            {/* </p> */}
           </div>
           <div className="mt-4 md:mt-0">
             <div className="text-right hidden md:block">
               <span className="text-xs font-bold bg-yellow-500 text-slate-900 px-2 py-1 rounded">
-                SEASON 2025
+                SEASON 2026
               </span>
             </div>
           </div>
@@ -66,10 +66,10 @@ export const Events: React.FC = () => {
               {/* Date Badge */}
               <div className="flex-shrink-0 flex flex-col items-center justify-center bg-slate-800 rounded-lg p-4 min-w-[100px] text-center border border-slate-700">
                 <span className="text-yellow-500 font-bold text-xl md:text-2xl">
-                  {event.date.split(".")[0]}
+                  {event.date.split(" ")[0]}
                 </span>
                 <span className="text-slate-400 uppercase text-sm font-bold">
-                  {event.date.split(".")[1]}.
+                  {event.date.split(" ")[1]}
                 </span>
               </div>
 
@@ -79,11 +79,6 @@ export const Events: React.FC = () => {
                   <h3 className="text-2xl font-bold text-white">
                     {event.title}
                   </h3>
-                  {event.status === "tentative" && (
-                    <span className="px-2 py-0.5 rounded text-xs bg-slate-700 text-slate-300 border border-slate-600">
-                      Geplant
-                    </span>
-                  )}
                 </div>
 
                 <div className="flex flex-wrap gap-4 text-slate-400 text-sm mb-3">
@@ -91,29 +86,27 @@ export const Events: React.FC = () => {
                     <MapPin size={16} className="text-yellow-500" />
                     {event.location}
                   </div>
-                  {event.status === "confirmed" && (
-                    <div className="flex items-center gap-1">
-                      <Clock size={16} className="text-yellow-500" />
-                      Startzeit TBA
-                    </div>
-                  )}
+                  <div className="flex items-center gap-1">
+                    <Clock size={16} className="text-yellow-500" />
+                    {event.time}
+                  </div>
                 </div>
 
                 <p className="text-slate-300">{event.description}</p>
               </div>
 
               {/* Action */}
-              <div className="mt-4 md:mt-0 flex-shrink-0">
-                <button className="w-full md:w-auto px-6 py-3 rounded-lg bg-slate-800 hover:bg-yellow-500 hover:text-slate-900 text-slate-300 font-semibold transition-all duration-300 border border-slate-700 hover:border-yellow-500">
-                  Info
-                </button>
-              </div>
+              {/* <div className="mt-4 md:mt-0 flex-shrink-0"> */}
+              {/*   <button className="w-full md:w-auto px-6 py-3 rounded-lg bg-slate-800 hover:bg-yellow-500 hover:text-slate-900 text-slate-300 font-semibold transition-all duration-300 border border-slate-700 hover:border-yellow-500"> */}
+              {/*     Info */}
+              {/*   </button> */}
+              {/* </div> */}
             </div>
           ))}
 
           <div className="p-8 text-center bg-slate-900/50 rounded-xl border border-dashed border-slate-700">
             <p className="text-slate-400 italic">
-              "Wir werden sicherlich noch andere Gründe finden zu feiern."
+              Es wird definitiv noch mehr Angelegenheiten geben um zu feiern.
             </p>
           </div>
         </div>
@@ -121,4 +114,3 @@ export const Events: React.FC = () => {
     </section>
   );
 };
-

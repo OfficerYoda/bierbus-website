@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>BierBus</title>
-    <meta name="description" content="Der legendäre BierBus Faschingswagen." />
+    <!-- content="Lieber BierBus-Bass als im Stau auf der A8." -->
+    <meta name="description" content="Bei BierBus-Bass ist Spaß in Übermaß." />
     <link
       rel="icon"
       href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmNWMyMTEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1iZWVyLWljb24gbHVjaWRlLWJlZXIiPjxwYXRoIGQ9Ik0xNyAxMWgxYTMgMyAwIDAgMSAwIDZoLTEiLz48cGF0aCBkPSJNOSAxMnY2Ii8+PHBhdGggZD0iTTEzIDEydjYiLz48cGF0aCBkPSJNMTQgNy41Yy0xIDAtMS40NC41LTMgLjVzLTItLjUtMy0uNS0xLjcyLjUtMi41LjVhMi41IDIuNSAwIDAgMSAwLTVjLjc4IDAgMS41Ny41IDIuNS41UzkuNDQgMiAxMSAyczIgMS41IDMgMS41IDEuNzItLjUgMi41LS41YTIuNSAyLjUgMCAwIDEgMCA1Yy0uNzggMC0xLjUtLjUtMi41LS41WiIvPjxwYXRoIGQ9Ik01IDh2MTJhMiAyIDAgMCAwIDIgMmg4YTIgMiAwIDAgMCAyLTJWOCIvPjwvc3ZnPg=="
@@ -32,6 +33,11 @@
         background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        /* To fix the italic character clipping */
+        padding-right: 0.3em;
+        margin-right: -0.3em;
+        display: inline-block;
       }
 
       .beer-bg {
