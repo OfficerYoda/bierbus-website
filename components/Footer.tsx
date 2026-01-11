@@ -15,8 +15,10 @@ export const Footer: React.FC = () => {
         <div className="flex gap-6 mb-8">
           {/* Placeholders for social media */}
           <a
-            href="#"
+            href="https://www.instagram.com/dieserbierbus/"
             className="p-3 bg-slate-900 rounded-full text-slate-400 hover:text-white hover:bg-pink-600 transition-all"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Instagram size={20} />
           </a>
@@ -32,4 +34,3 @@ export const Footer: React.FC = () => {
     </footer>
   );
 };
-
