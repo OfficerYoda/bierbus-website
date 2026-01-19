@@ -1,5 +1,5 @@
+import { Clock, MapPin } from "lucide-react";
 import React from "react";
-import { MapPin, Clock } from "lucide-react";
 import { Event } from "../types";
 
 const events: Event[] = [
@@ -8,13 +8,13 @@ const events: Event[] = [
     title: "Faschingsumzug Hockenheim",
     date: "Sa. 14.02.",
     time: "13:31",
-    location: "Innenstadt Hockenheim",
+    location: "Hockenheim",
     description:
       "Der Startschuss! Wir rollen den BierBus zum ersten Mal richtig aus. Eskalation vorprogrammiert."
   },
   {
     id: 2,
-    title: "Umzug Altlußheim",
+    title: "Faschingsumzug Altlußheim",
     date: "Mo. 16.02.",
     time: "13:31",
     location: "Altlußheim",
