@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BierBus – 6 Design-Entwürfe</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #141414;
+    color: #eee;
+    min-height: 100vh;
+    padding: clamp(1rem, 4vw, 4rem);
+  }
+  header { text-align: center; margin-bottom: 3rem; }
+  h1 { font-size: clamp(2.5rem, 8vw, 5rem); letter-spacing: -0.03em; }
+  h1 span { color: #ff9500; }
+  .sub { color: #999; margin-top: .5rem; font-size: 1.1rem; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  a.card {
+    display: block;
+    text-decoration: none;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #1e1e1e;
+    border: 1px solid #2c2c2c;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  a.card:hover, a.card:focus-visible { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,.5); }
+  .preview {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.6rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .meta { padding: 1rem 1.25rem 1.25rem; }
+  .meta h2 { font-size: 1.15rem; color: #fff; }
+  .meta p { color: #999; font-size: .9rem; margin-top: .35rem; line-height: 1.45; }
+  .num {
+    position: absolute; top: .6rem; left: .8rem;
+    font-size: .75rem; font-weight: 700; opacity: .75;
+  }
+  /* Mini-Vorschau je Stil */
+  .p1 { background: repeating-linear-gradient(45deg, #ff9500 0 24px, #161616 24px 48px); color: #fff; text-shadow: 0 2px 8px #000; }
+  .p2 { background: #0b3d91; color: #fff;
+        background-image: linear-gradient(rgba(255,255,255,.12) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.12) 1px, transparent 1px);
+        background-size: 24px 24px; font-family: ui-monospace, monospace; }
+  .p3 { background: linear-gradient(135deg, #5d4037, #8d6e63); color: #ffd54f; }
+  .p4 { background: #f4f4f0; color: #111; text-transform: uppercase; letter-spacing: -.02em; border-bottom: 8px solid #ff5c00; }
+  .p5 { background: linear-gradient(120deg, #ffea00, #39ff6a 55%, #ff5ca8); color: #111; }
+  .p6 { background: #f3e9d2; color: #4a3728; font-family: Georgia, serif; font-style: italic; }
+  footer { text-align: center; color: #666; margin-top: 3rem; font-size: .85rem; }
+  @media (prefers-reduced-motion: reduce) { a.card { transition: none; } }
+</style>
+</head>
+<body>
+  <header>
+    <h1>🍺 Bier<span>Bus</span> 🔧</h1>
+    <p class="sub">Faschings-Bollerwagen · 1,10 × 2,20 m · Motto: <strong>Handwerker</strong> — 6 Design-Entwürfe zur Auswahl</p>
+  </header>
+  <main class="grid">
+    <a class="card" href="/1">
+      <div class="preview p1"><span class="num">/1</span>Baustelle</div>
+      <div class="meta"><h2>Baustelle</h2><p>Orange/Schwarz, Absperrband, Warnschilder, Stencil-Typo, blinkende Warnlichter.</p></div>
+    </a>
+    <a class="card" href="/2">
+      <div class="preview p2"><span class="num">/2</span>Bauplan</div>
+      <div class="meta"><h2>Bauplan / Blueprint</h2><p>Technische Zeichnung auf Blaupause, Maßpfeile, selbstzeichnende Linien.</p></div>
+    </a>
+    <a class="card" href="/3">
+      <div class="preview p3"><span class="num">/3</span>Retro-Werkstatt</div>
+      <div class="meta"><h2>Retro-Werkstatt</h2><p>70er-Jahre, Holz &amp; Lochwand, warme Töne, Groovy-Typo.</p></div>
+    </a>
+    <a class="card" href="/4">
+      <div class="preview p4"><span class="num">/4</span>Industrial Brutalist</div>
+      <div class="meta"><h2>Industrial Brutalist</h2><p>Fette Typo, Werkzeugkatalog-Look, harte Kanten, schwarz/weiß/orange.</p></div>
+    </a>
+    <a class="card" href="/5">
+      <div class="preview p5"><span class="num">/5</span>Toolbox Pop</div>
+      <div class="meta"><h2>Toolbox Pop</h2><p>Knallbunt, Comic-Werkzeuge, Sticker-Look, Konfetti &amp; Bounce.</p></div>
+    </a>
+    <a class="card" href="/6">
+      <div class="preview p6"><span class="num">/6</span>Vintage Zollstock</div>
+      <div class="meta"><h2>Vintage Zollstock</h2><p>Beiges Papier, alte Werbeschilder, Sepia, aufklappbarer Zollstock.</p></div>
+    </a>
+  </main>
+  <footer>Gleicher Inhalt in allen Entwürfen – nur der Look unterscheidet sich.</footer>
+</body>
+</html>

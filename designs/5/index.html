@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BierBus – Unser Bollerwagen | Motto: Handwerker</title>
+  <meta name="description" content="BierBus – unser Faschings-Bollerwagen im Handwerker-Motto. Termine, Technik, Team und Kontakt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Hauptnavigation">
+      <a class="logo" href="#top">🔧 BierBus</a>
+      <ul class="nav-list">
+        <li><a href="#wagen">Der Wagen</a></li>
+        <li><a href="#termine">Termine</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. Hero -->
+    <section class="hero band band--yellow" id="top" aria-labelledby="hero-title">
+      <canvas id="confetti" aria-hidden="true"></canvas>
+      <span class="float-tool" style="--x:8%;  --y:18%; --d:0s"   aria-hidden="true">🔨</span>
+      <span class="float-tool" style="--x:85%; --y:14%; --d:.6s"  aria-hidden="true">🪚</span>
+      <span class="float-tool" style="--x:12%; --y:72%; --d:1.1s" aria-hidden="true">🍺</span>
+      <span class="float-tool" style="--x:88%; --y:68%; --d:.3s"  aria-hidden="true">🎉</span>
+      <div class="container hero-inner">
+        <p class="badge badge--pink tilt-r">HELAU!</p>
+        <h1 id="hero-title" class="hero-title sticker tilt-l">BierBus</h1>
+        <p class="claim">Unser Bollerwagen. Unser Stolz. – Motto: <strong>Handwerker</strong></p>
+        <div class="cta-row">
+          <a class="btn btn--primary" href="#termine">Termine ansehen</a>
+          <a class="btn btn--secondary" href="#kontakt">Mitfahren / Kontakt</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Der Wagen & Technik -->
+    <section class="band band--blue" id="wagen" aria-labelledby="wagen-title">
+      <div class="container">
+        <p class="badge badge--yellow tilt-l reveal">Datenblatt</p>
+        <h2 id="wagen-title">Der Wagen &amp; Technik</h2>
+        <p class="section-intro">Klein, laut, handgebaut – unser Datenblatt kann sich sehen lassen.</p>
+        <ul class="grid spec-grid">
+          <li class="sticker reveal tilt-l">
+            <span class="tool-icon" aria-hidden="true">📏</span>
+            <h3>Maße</h3>
+            <p>1,10 m × 2,20 m – passt durch jede Gasse</p>
+          </li>
+          <li class="sticker reveal tilt-r">
+            <span class="tool-icon" aria-hidden="true">🔊</span>
+            <h3>Musikanlage</h3>
+            <p>Sound für die ganze Straße</p>
+          </li>
+          <li class="sticker reveal tilt-l">
+            <span class="tool-icon" aria-hidden="true">🌫️</span>
+            <h3>Nebelmaschine</h3>
+            <p>Für den großen Auftritt</p>
+          </li>
+          <li class="sticker reveal tilt-r">
+            <span class="tool-icon" aria-hidden="true">🍻</span>
+            <h3>Getränkebar</h3>
+            <p>Immer gut gekühlt</p>
+          </li>
+          <li class="sticker reveal tilt-l">
+            <span class="tool-icon" aria-hidden="true">💡</span>
+            <h3>Beleuchtung</h3>
+            <p>Auch nachts einsatzbereit</p>
+          </li>
+          <li class="sticker reveal tilt-r">
+            <span class="tool-icon" aria-hidden="true">💪</span>
+            <h3>Antrieb</h3>
+            <p>Pure Muskelkraft (Handwagen!)</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. Termine -->
+    <section class="band band--green" id="termine" aria-labelledby="termine-title">
+      <div class="container">
+        <p class="badge badge--pink tilt-r reveal">NEU!</p>
+        <h2 id="termine-title">Termine &amp; Umzüge</h2>
+        <p class="section-intro">Saison 2026/2027 – hier findet ihr uns auf der Straße.</p>
+        <ul class="grid date-grid">
+          <li class="sticker date-card reveal tilt-l">
+            <p class="date-day">11.11.</p>
+            <p class="date-year">2026</p>
+            <h3>Sessionseröffnung</h3>
+          </li>
+          <li class="sticker date-card reveal tilt-r">
+            <p class="date-day">04.02.</p>
+            <p class="date-year">2027</p>
+            <h3>Weiberfastnacht</h3>
+          </li>
+          <li class="sticker date-card reveal tilt-l">
+            <p class="date-day">08.02.</p>
+            <p class="date-year">2027</p>
+            <h3>Rosenmontagszug</h3>
+          </li>
+          <li class="sticker date-card reveal tilt-r">
+            <p class="date-day">09.02.</p>
+            <p class="date-year">2027</p>
+            <h3>Faschingsdienstag</h3>
+          </li>
+        </ul>
+        <p class="note reveal">⚠️ Termine ohne Gewähr – Details folgen.</p>
+      </div>
+    </section>
+
+    <!-- 4. Galerie -->
+    <section class="band band--pink" id="galerie" aria-labelledby="galerie-title">
+      <div class="container">
+        <p class="badge badge--yellow tilt-l reveal">Bilder</p>
+        <h2 id="galerie-title">Galerie</h2>
+        <p class="section-intro">Echte Fotos folgen – die Platzhalter bleiben 1:1 tauschbar.</p>
+        <ul class="grid gallery-grid">
+          <li>
+            <figure class="sticker gallery-card reveal tilt-l">
+              <div class="gallery-img g1" role="img" aria-label="Platzhalter: Der BierBus in Aktion"><span aria-hidden="true">🍺</span><em>Foto folgt</em></div>
+              <figcaption>Der BierBus in Aktion</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="sticker gallery-card reveal tilt-r">
+              <div class="gallery-img g2" role="img" aria-label="Platzhalter: Rosenmontag"><span aria-hidden="true">🎉</span><em>Foto folgt</em></div>
+              <figcaption>Rosenmontag</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="sticker gallery-card reveal tilt-l">
+              <div class="gallery-img g3" role="img" aria-label="Platzhalter: Unsere Crew"><span aria-hidden="true">👷</span><em>Foto folgt</em></div>
+              <figcaption>Unsere Crew</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="sticker gallery-card reveal tilt-r">
+              <div class="gallery-img g4" role="img" aria-label="Platzhalter: Nachrüstung Nebelmaschine"><span aria-hidden="true">🌫️</span><em>Foto folgt</em></div>
+              <figcaption>Nachrüstung Nebelmaschine</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="sticker gallery-card reveal tilt-l">
+              <div class="gallery-img g5" role="img" aria-label="Platzhalter: Die Bar"><span aria-hidden="true">🍻</span><em>Foto folgt</em></div>
+              <figcaption>Die Bar</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="sticker gallery-card reveal tilt-r">
+              <div class="gallery-img g6" role="img" aria-label="Platzhalter: Nachtfahrt"><span aria-hidden="true">🌙</span><em>Foto folgt</em></div>
+              <figcaption>Nachtfahrt</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. Team -->
+    <section class="band band--orange" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <p class="badge badge--blue tilt-r reveal">Die Crew</p>
+        <h2 id="team-title">Team</h2>
+        <p class="section-intro">Vier Leute, ein Wagen, ein Plan.</p>
+        <ul class="grid team-grid">
+          <li class="sticker team-card reveal tilt-l">
+            <p class="avatar avatar--yellow" aria-hidden="true">V</p>
+            <h3>Der Vorarbeiter</h3>
+            <p>Orga &amp; Planung</p>
+          </li>
+          <li class="sticker team-card reveal tilt-r">
+            <p class="avatar avatar--green" aria-hidden="true">P</p>
+            <h3>Der Polier</h3>
+            <p>Hält die Truppe zusammen</p>
+          </li>
+          <li class="sticker team-card reveal tilt-l">
+            <p class="avatar avatar--pink" aria-hidden="true">Z</p>
+            <h3>Der Zapfmeister</h3>
+            <p>Bar &amp; Verpflegung</p>
+          </li>
+          <li class="sticker team-card reveal tilt-r">
+            <p class="avatar avatar--blue" aria-hidden="true">A</p>
+            <h3>Der Azubi</h3>
+            <p>Technik &amp; Nebel</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. Sponsoren -->
+    <section class="band band--paper" id="sponsoren" aria-labelledby="sponsoren-title">
+      <div class="container">
+        <h2 id="sponsoren-title">Sponsoren</h2>
+        <p class="section-intro">Ohne euch läuft nichts – danke!</p>
+        <ul class="grid sponsor-grid">
+          <li class="sponsor-chip tilt-l reveal">🍺 Brauerei Muster</li>
+          <li class="sponsor-chip tilt-r reveal">🏗️ Bauunternehmen Beispiel</li>
+          <li class="sponsor-chip tilt-l reveal">🥩 Metzgerei Schmidt</li>
+          <li class="sponsor-chip tilt-r reveal">🥤 Getränkemarkt Prost</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7. Kontakt -->
+    <section class="band band--yellow" id="kontakt" aria-labelledby="kontakt-title">
+      <div class="container">
+        <p class="badge badge--green tilt-r reveal">Mitfahren!</p>
+        <h2 id="kontakt-title">Kontakt / Mitfahren</h2>
+        <p class="section-intro">Bock auf eine Runde mit dem BierBus? Meld dich!</p>
+        <form class="sticker contact-form reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input type="text" id="f-name" name="name" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="f-email">E-Mail</label>
+            <input type="email" id="f-email" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="f-msg">Nachricht</label>
+            <textarea id="f-msg" name="nachricht" rows="4" required></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">Absenden</button>
+          <p class="note" id="form-note">Demo-Formular – schreibt uns einfach direkt.</p>
+        </form>
+        <ul class="social-row">
+          <li><a class="btn btn--small" href="#">📸 Instagram</a></li>
+          <li><a class="btn btn--small" href="#">💬 WhatsApp</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 8. Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 BierBus – Impressum &amp; Datenschutz folgen</p>
+      <p class="gag">Gebaut mit Helau &amp; Muskelkraft 🔧🍺</p>
+      <p><a class="back-link" href="/">← Alle Designs</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

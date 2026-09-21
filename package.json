@@ -1,0 +1,6 @@
+{
+  "name": "bierbus",
+  "scripts": {
+    "start": "bun server.ts"
+  }
+}
