@@ -1,0 +1,28 @@
+name: Deploy Quartz site to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v6
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install and build
+        run: |
+          bun install --frozen-lockfile
+          bun run build
+
+      - name: Deploy
+        env:
+          SITE: bierbus
+          SRC: dist
+        run: |
+          curl -fsSL https://forgejo.officeryoda.dev/OfficerYoda/site-deploy/raw/branch/main/deploy.sh | bash
