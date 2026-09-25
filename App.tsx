@@ -6,19 +6,25 @@ import { Footer } from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-slate-900 min-h-screen text-slate-100 selection:bg-yellow-500 selection:text-slate-900">
+    <div className="bg-slate-950 min-h-screen text-slate-100 selection:bg-yellow-500 selection:text-slate-900">
       
-      {/* Sticky Banner if needed in future, essentially a minimal nav */}
-      <nav className="fixed top-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-white/5">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-            <span className="font-bold text-xl tracking-tighter text-white">BIER<span className="text-yellow-500">BUS</span></span>
-            <div className="hidden md:flex gap-6 text-sm font-semibold text-slate-300">
-                <a href="#features" className="hover:text-yellow-400 transition-colors">AUSTATTUNG</a>
-                <a href="#events" className="hover:text-yellow-400 transition-colors">TERMINE</a>
+      {/* Minimal Navigation */}
+      <nav className="fixed top-0 w-full z-50 bg-slate-950/90 backdrop-blur-md border-b border-white/5">
+        <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+            <span className="font-black text-2xl tracking-tighter text-white uppercase italic">
+              BIER<span className="text-yellow-500">BUS</span>
+            </span>
+            <div className="hidden md:flex gap-10 text-xs font-black tracking-widest text-slate-400">
+                <a href="#features" className="hover:text-yellow-500 transition-colors uppercase">Die Technik</a>
+                <a href="#events" className="hover:text-yellow-500 transition-colors uppercase">Die Tour</a>
+                <a href="#" className="hover:text-yellow-500 transition-colors uppercase opacity-30 cursor-not-allowed">Shop</a>
             </div>
-            <a href="#events" className="md:hidden text-xs font-bold bg-yellow-500 text-slate-900 px-3 py-1 rounded-full">
-                TERMINE
-            </a>
+            <div className="flex items-center gap-4">
+               <span className="hidden sm:inline-block text-[10px] font-bold text-yellow-500/50 uppercase tracking-widest">Live Status: Building</span>
+               <a href="#events" className="text-[11px] font-black bg-yellow-500 text-slate-950 px-4 py-2 rounded-none uppercase tracking-wider hover:bg-white transition-colors">
+                  Dabei sein
+               </a>
+            </div>
         </div>
       </nav>
 
@@ -27,24 +33,35 @@ const App: React.FC = () => {
         <Features />
         <Events />
         
-        {/* Gallery Placeholder - Visual Break */}
-        <section className="py-20 bg-slate-900 overflow-hidden">
-            <div className="container mx-auto px-4 text-center mb-12">
-                <h2 className="text-3xl font-bold uppercase mb-4">Work in Progress</h2>
-                <p className="text-slate-400">Ein kleiner Einblick in die Werkstatt.</p>
+        {/* Gallery Section with better imagery */}
+        <section className="py-24 bg-slate-950 overflow-hidden">
+            <div className="container mx-auto px-4 text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-black uppercase mb-4 tracking-tighter italic">Werkstatt<span className="text-yellow-500">Report</span></h2>
+                <div className="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p className="text-slate-400 max-w-xl mx-auto font-medium">
+                  Hier wird geschweißt, geschraubt und vor allem getestet. Unser BierBus nimmt Form an.
+                </p>
             </div>
-            <div className="flex gap-4 overflow-x-auto pb-8 snap-x mx-4 no-scrollbar">
-                {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="flex-shrink-0 w-80 h-60 bg-slate-800 rounded-2xl overflow-hidden relative snap-center border-2 border-slate-800 hover:border-yellow-500 transition-colors">
+            <div className="flex gap-6 overflow-x-auto pb-12 snap-x px-4 no-scrollbar">
+                {[
+                  "https://images.unsplash.com/photo-1513360335302-d8130f75a000?auto=format&fit=crop&q=80&w=600",
+                  "https://images.unsplash.com/photo-1581092921461-7d65ef076459?auto=format&fit=crop&q=80&w=600",
+                  "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=600",
+                  "https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&q=80&w=600"
+                ].map((src, i) => (
+                    <div key={i} className="flex-shrink-0 w-80 md:w-96 aspect-video bg-slate-900 rounded-none overflow-hidden relative snap-center border border-white/10 group">
                         <img 
-                            src={`https://picsum.photos/seed/construction${i}/600/400?grayscale`} 
-                            alt="Construction placeholder" 
-                            className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                            src={src} 
+                            alt={`Bauphase ${i+1}`} 
+                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
-                        <span className="absolute bottom-4 left-4 bg-yellow-500 text-slate-900 text-xs font-bold px-2 py-1 rounded">
-                            BAUPHASE
-                        </span>
+                        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div className="absolute bottom-4 left-4 flex items-center gap-2">
+                            <div className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse"></div>
+                            <span className="text-white text-[10px] font-black uppercase tracking-widest">
+                                Status: In Progress
+                            </span>
+                        </div>
                     </div>
                 ))}
             </div>
