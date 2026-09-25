@@ -36,7 +36,7 @@ export const Hero: React.FC = () => {
         </div>
 
         <p className="text-xl md:text-2xl font-medium text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Wenn es scheppert, nebelt und das Bier fließt –
+          Wenn es scheppert, nebelt und das Bier fließt
           <br className="hidden md:block" />
           dann sind wir da.
         </p>
@@ -47,14 +47,14 @@ export const Hero: React.FC = () => {
             className="group px-10 py-5 bg-yellow-500 hover:bg-white text-slate-950 font-extrabold text-xl rounded-none transition-all duration-300 flex items-center gap-3 shadow-[8px_8px_0px_0px_rgba(255,255,255,0.2)] hover:shadow-none hover:translate-x-1 hover:translate-y-1"
           >
             <PartyPopper size={24} />
-            TERMINE PRÜFEN
+            TERMINE
           </a>
           <a
             href="#features"
             className="px-10 py-5 bg-transparent border-2 border-white/20 hover:border-yellow-500 text-white font-bold text-xl rounded-none transition-all flex items-center gap-3"
           >
             <Music size={24} />
-            TECH-STACK
+            AUSSTATTUNG
           </a>
         </div>
       </div>

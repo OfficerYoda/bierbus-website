@@ -7,7 +7,7 @@ const features: Feature[] = [
     id: 1,
     title: "Sound System",
     description:
-      " 0815 Bluetooth-Lautsprecher. Unsere Anlage scheppert so ordentlich. - Bei uns wird die Musik dreistellig.",
+      "Unsere Anlage scheppert so ordentlich. - Bei uns wird die Musik dreistellig.",
     icon: Speaker
   },
   {
@@ -38,7 +38,10 @@ export const Features: React.FC = () => {
     <section id="features" className="py-20 bg-slate-900 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 uppercase">
+          <h2
+            className="text-4xl md:text-5xl font-bold text-white mb-4 uppercase"
+            style={{ lineHeight: 1.2 }}
+          >
             Das <span className="beer-gradient">Gerät</span>
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto">
