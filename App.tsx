@@ -38,10 +38,12 @@ const App: React.FC = () => {
               Live Status: Building
             </span>
             <a
-              href="#events"
+              href="https://www.instagram.com/dieserbierbus/"
               className="text-[11px] font-black bg-yellow-500 text-slate-950 px-4 py-2 rounded-none uppercase tracking-wider hover:bg-white transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Dabei sein
+              Instagram
             </a>
           </div>
         </div>
