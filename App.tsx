@@ -66,10 +66,10 @@ const App: React.FC = () => {
           </div>
           <div className="flex gap-6 overflow-x-auto pb-12 snap-x px-4 no-scrollbar">
             {[
-              "https://images.unsplash.com/photo-1513360335302-d8130f75a000?auto=format&fit=crop&q=80&w=600",
-              "https://images.unsplash.com/photo-1581092921461-7d65ef076459?auto=format&fit=crop&q=80&w=600",
+              "https://images.unsplash.com/photo-1436076863939-06870fe779c2?auto=format&fit=crop&q=80&w=600",
+              "https://images.unsplash.com/photo-1624382085369-37bfeb488f97?auto=format&fit=crop&q=80&w=600",
               "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=600",
-              "https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&q=80&w=600"
+              "https://plus.unsplash.com/premium_photo-1675368982196-277a07fa3b0f?auto=format&fit=crop&q=80&w=600"
             ].map((src, i) => (
               <div
                 key={i}
@@ -99,4 +99,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-
