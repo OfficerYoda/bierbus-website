@@ -7,14 +7,14 @@ const features: Feature[] = [
     id: 1,
     title: "Sound System",
     description:
-      "Kein 0815 Bluetooth-Lautsprecher. Unsere Anlage scheppert so ordentlich, dass man uns schon drei Straßen weiter hört.",
+      " 0815 Bluetooth-Lautsprecher. Unsere Anlage scheppert so ordentlich. - Bei uns wird die Musik dreistellig.",
     icon: Speaker
   },
   {
     id: 2,
     title: "Die Bar",
     description:
-      "Vollausgestattete Bar an Bord. Egal ob Pils, Weizen oder Spezial-Mischen – niemand bleibt trocken.",
+      "Vollausgestattete Bar an Bord. Egal ob Bier, Mischen oder Hart-Alk – niemand bleibt trocken.",
     icon: Beer
   },
   {
@@ -28,7 +28,7 @@ const features: Feature[] = [
     id: 4,
     title: "Die Bier-Bank",
     description:
-      "Wenn die Beine schwer werden, bietet unsere integrierte Bier-Bank Platz zum Verschnaufen (und Nachtanken).",
+      "Wenn die Biere schwer werden, bietet unsere integrierte Bier-Bank Platz um das Bier zu parken.",
     icon: Zap
   }
 ];
@@ -39,7 +39,7 @@ export const Features: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 uppercase">
-            Das <span className="text-yellow-500">Gerät</span>
+            Das <span className="beer-gradient">Gerät</span>
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto">
             Der BierBus ist nicht einfach nur ein Bollerwagen. Er ist eine
@@ -69,4 +69,3 @@ export const Features: React.FC = () => {
     </section>
   );
 };
-
